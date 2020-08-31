@@ -1,0 +1,75 @@
+/*font-family: 'Roboto', sans-serif;*/
+
+body,html {
+    margin: 0;
+    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    background: linear-gradient(90deg, rgba(246,255,173,1) 0%, rgba(229,187,232,1) 100%);
+  }
+
+ul { 
+    margin: 0 auto; /*150px */
+    padding: 0; 
+    list-style: none; 
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    text-align: center;
+  }
+  li { 
+    position: relative; 
+    padding: 20px 0;
+    margin: 15px;
+  }
+  a {
+    background: -webkit-linear-gradient(#353f4b, rgb(170, 170, 170));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+#img-style {
+    width: 235px;
+    height: 285px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .imgRandom {
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+  }
