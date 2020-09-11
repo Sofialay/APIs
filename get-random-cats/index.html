@@ -10,10 +10,30 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body onload="load()">
-    <ul id="secciones">
-        <li id="raza" is="active"><a href="#">Raza</a></li>
-        <li id="random"><a href="#">Random</a></li>
-    </ul>
-<div id="img-style" style="display: none;"></div>
+    
+    <!-- Pagina de Gatites:
+    Sección Búsqueda de razas
+    -
+    Hacer una sección Búsqueda de razas, para eso:
+    - Hacer una pagina que contenga un input de busqueda
+    - al hacer click en el botón de búsqueda, obtener el value del input de búsqueda
+    - con ese dato, hacer una consulta a https://api.thecatapi.com/v1/breeds/search?q=busqueda, reemplazando busqueda por el value del input
+    - con la respuesta, hacer una tabla para mostrar los nombres de las razas
+    - EXTRA: hacer que funcione cuando se da enter al escribir la búsqueda     -->
+
+    <section id="container">
+        <ul id="secciones">
+            <li id="raza" is="active"><a href="#">Race</a></li>
+            <li id="random"><a href="#">Random</a></li>
+        </ul>
+        <div id="seccion-random" style="display: none;">
+            <img id="random-cat-image" src="" alt="random cat">
+        </div>
+
+        <div id="seccion-raza" style="display: none;">
+            <input id="input-id" type="text"> 
+            <button id="search">Search</button>
+        </div>
+    </section>
 </body>
 </html>
